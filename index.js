@@ -1,7 +1,7 @@
 var express = require('express');
-var app = express();//Respond with "hello world" for requests that hit our root "/"
+var app = express();
 app.get('/', function (req, res) {
- res.send("hello NARU");
-});//listen to port 80 by default
+res.send("hello NARU");
+});
 app.listen(process.env.PORT || 80);
 module.exports = app;
